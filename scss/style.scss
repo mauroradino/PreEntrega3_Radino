@@ -1,5 +1,43 @@
 @import "../scss/variables.scss";
 @import "https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:ital,wght@1,300&family=Unbounded:wght@200&display=swap";
+@mixin titulos-globales_paginas{
+    padding-top: 10px;
+    text-align: center;
+    font-family: $font-family_1;
+}
+@mixin img_nav{
+    width: 90px;
+	height: auto;
+}
+@mixin navbar{
+    width: 100%;
+    background-color: $background-color_1;
+    font-family: $font-family_2;
+    font-size: large;
+    width: 100%;
+    display: inline-flex;
+    list-style-type: none;
+    margin-block: auto;
+}
+@mixin header{
+    display: flex;
+	justify-content: center;
+	height: 70px;
+	background-color: $background-color_1;
+	padding-bottom: 110px;
+}
+.img_nav{
+    @include img_nav();
+}
+h2{
+    @include titulos-globales_paginas();
+}
+.navbar{
+    @include navbar();
+}
+header{
+    @include header();
+}
 @media (max-width:767px){
 	* {
 		margin: 0px;
@@ -12,26 +50,12 @@
 		height: 1400px;
 		height: auto;
 	}
-	.img_nav {
-		width: 90px;
-		height: auto;
-	}
 	header {
 		display: flex;
 		justify-content: center;
 		height: 70px;
 		background-color: $background-color_1;
 		padding-bottom: 110px;
-	}
-	.navbar {
-		width: 100%;
-		background-color: $background-color_1;
-		font-family: $font-family_2;
-		font-size: large;
-		width: 100%;
-		display: inline-flex;
-		list-style-type: none;
-		margin-block: auto;
 	}
 	li {
 		margin-block: auto;
@@ -257,26 +281,12 @@
 		height: auto;
 		padding-bottom: 60px;
 	}
-	.img_nav {
-		width: 90px;
-		height: auto;
-	}
 	header {
 		display: flex;
 		justify-content: center;
 		height: 70px;
 		background-color: $background-color_1;
 		padding-bottom: 110px;
-	}
-	.navbar {
-		width: 100%;
-		background-color: $background-color_1;
-		font-family: $font-family_2;
-		font-size: large;
-		width: 100%;
-		display: inline-flex;
-		list-style-type: none;
-		margin-block: auto;
 	}
 	li {
 		margin-block: auto;
@@ -475,10 +485,6 @@
 }
 @media (min-width:1023px) {
 	img {
-		.img_nav {
-			width: 90px;
-			height: auto;
-		}
 		.card-img-top {
 			width: auto;
 			height: auto;
@@ -494,20 +500,6 @@
 		height: 70px;
 		background-color: $background-color_1;
 		padding-bottom: 110px;
-		display: flex;
-		justify-content: center;
-		height: 70px;
-		background-color: $background-color_1;
-		padding-bottom: 110px;
-	}
-	.navbar {
-		width: 100%;
-		background-color: $background-color_1;
-		font-family: $font-family_2;
-		font-size: large;
-		display: inline-flex;
-		list-style-type: none;
-		margin-block: auto;
 	}
 	li {
 		margin-block: auto;
@@ -557,10 +549,6 @@
 	.lista_contacto {
 		margin-left: 10%;
 		list-style-type: none;
-		font-family: $font-family_1;
-	}
-	h2 {
-		text-align: center;
 		font-family: $font-family_1;
 	}
 	.titulo_sobreNosotros_main {
