@@ -22,7 +22,6 @@
 	list-style-type: none;
 	margin-block: auto;
 }
-
 @mixin header {
 	display: flex;
 	justify-content: center;
@@ -30,7 +29,6 @@
 	background-color: $background-color_1;
 	padding-bottom: 110px;
 }
-
 .btn {
 	background-color: black;
 	color: white;
