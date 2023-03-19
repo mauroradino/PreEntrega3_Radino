@@ -1,4 +1,4 @@
-@import "../scss/variables.scss";
+@import "../scss/_variables.scss";
 @import "https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:ital,wght@1,300&family=Unbounded:wght@200&display=swap";
 
 @mixin titulos-globales_paginas {
@@ -11,7 +11,6 @@
 	width: 90px;
 	height: auto;
 }
-
 @mixin navbar {
 	width: 100%;
 	background-color: $background-color_1;
@@ -20,7 +19,6 @@
 	width: 100%;
 	display: inline-flex;
 	list-style-type: none;
-	margin-block: auto;
 }
 @mixin header {
 	display: flex;
