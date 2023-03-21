@@ -1,6 +1,11 @@
 /*FUENTES*/
 /*COLORES*/
 @import "https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:ital,wght@1,300&family=Unbounded:wght@200&display=swap";
+.navbar-nav {
+  background-color: #acb5cc;
+  z-index: 9999;
+}
+
 .btn {
   background-color: black;
   color: white;
